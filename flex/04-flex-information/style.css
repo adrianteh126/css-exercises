@@ -1,5 +1,12 @@
+/* <!-- - All items are centered on the page (horizontally, not vertically).
+- The items are arranged horizontally on the page.
+- The items are only 200px wide and the text wraps.
+ --> */
+
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+
 }
 
 img {
@@ -10,6 +17,20 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+}
+
+div.items {
+  display: flex;
+  margin-top: 32px;
+  gap: 52px;
+  justify-content: center;
+}
+
+div.items>div {
+  /* width: 200px; */
+  max-width: 250px;
+  border: 1px dashed black;
+
 }
 
 /* do not edit this footer */
